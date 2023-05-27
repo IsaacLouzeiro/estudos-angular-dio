@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAL DE NOTÍCIAS</title>
+    <link rel="stylesheet" href="assets/styles/card.css">
+    <script src="src/components/CardNews.js" defer></script>
+    <script src="src/components/TituloDinamico.js" defer></script>
+    <script src="src/components/CardHighlights.js" defer></script>
+</head>
+<body>
+    <div class="app-root">
+        <div class="news">
+            <titulo-dinamico title="Portal de notícias" color="#003049" font-size="2em"></titulo-dinamico>
+
+            <card-news 
+                autor="Isaac Louzeiro"
+                dataPublication="14/05/2023"
+                title="Darth Vader Contrata"
+                link-url="www.google.com"
+                photo="assets/img/Darth_Vader.jpg"
+                content="Darth Vader procura desenvolvedores que saibam trabalhar com componentes."
+            ></card-news>
+    
+            <card-news
+                title="Yoda convence república a utilizar components"
+                dataPublication="14/05/2023"
+                link-url="www.google.com"
+                photo="assets/img/baby_yoda.jpg"
+                content="Yoda se pronuncia e choca a república."
+            ></card-news>
+
+            <card-news
+                autor="Isaac Louzeiro"
+                title="Dumbledore afirma que Vue é o melhor framework"
+                dataPublication="15/05/2023"
+                link-url="www.google.com"
+                photo="assets/img/dumbledore.jpg"
+                content="Antes de sua trágica morte, Dumbledore, em seus últimos minutos, diz que o Vue Js é o melhor framework. Afirma Snape."
+            ></card-news>
+
+            <card-news
+                title="Bruce Wayne vira Programador Angular"
+                dataPublication="15/05/2023"
+                link-url="www.google.com"
+                content="O famoso cavaleiro das trevas choca a internet ao dizer que está em transição de carreira para a área de Desenvolvimento Web."
+            ></card-news>
+        </div>
+
+        <div class="highlights">
+            <titulo-dinamico title="Destaques" color="#003049" font-size="1.2em"></titulo-dinamico>
+
+            <card-highlights
+                title="Yoda convence república a utilizar components"
+            ></card-highlights>
+
+            <card-highlights 
+                autor="Isaac Louzeiro" 
+                title="Darth Vader Contrata"
+            ></card-highlights>
+
+            <a href="#">Veja a lista completa</a>
+        </div>
+
+        <footer>
+            &copy; 2023 Todos os direitos reservados | Desenvolvido por <a href="" target="_blank">Isaac Louzeiro</a>
+        </footer>
+    </div>
+
+</body>
+</html>
